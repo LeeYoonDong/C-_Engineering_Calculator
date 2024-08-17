@@ -51,3 +51,58 @@ g++ -o calculator main.cpp
 
 - 수식 입력 시 공백 없이 입력해야 합니다.
 - 진수 변환 시 음수는 지원하지 않습니다.
+  <br/>
+  <br/>
+# C++ Engineering Calculator Project
+
+This project is an engineering calculator implemented in C++.
+
+## function
+
+1. Calculate general formulas
+- Four arithmetic operations (+, -, *, /)
+- trigonometric functions (sin, cos, tan)
+- Inverted trigonometric functions (asin, acos, atan)
+- Log function (log)
+- Square root (sqrt)
+
+2. binary conversion
+- Convert decimal to binary, octal, hexadecimal
+
+## How to use it
+
+1. Run the program.
+2. Select the desired function from the main menu:
+- 1: Calculate equations
+- 2: Singular conversion
+- 3: The end
+3. Provide input based on the selected features:
+- Calculate Formula: Enter the formula you want to calculate.
+- Essence conversion: Enter the decimal number you want to convert and the binary number (2, 8, 16) you want to convert.
+4. Check the results.
+
+## Formula Input Guide
+
+- Triangular functions: s(sin), c(cos), t(tan) (e.g., s45)
+- Inverted trigonometric functions: S(asin), C(acos), T(atan) (e.g., S45)
+- Log: l (e.g. l2)
+- Square root: L (e.g., L4)
+
+## Compile and run
+
+```
+g++ -o calculator main.cpp
+./calculator
+```
+
+## Class structure
+
+- 'C Interface': User interface management
+- 'CCharStack': implementing character stack
+- 'CIntStack': Implementing a numeric stack
+- 'CCALC': Implement calculation logic
+
+## Precautions
+
+- When entering an expression, you must enter it without a space.
+- Negative numbers are not supported when converting integers.
